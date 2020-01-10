@@ -1,37 +1,4 @@
-$primary_color: #444;
-$secondary_color: #eece1a;
-$show-homw-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.8;
-
-@mixin easeOut{
-	transition: all 0.5s ease-out;
-}
-
-@mixin background{
-	@if show-home-image{
-		&#bg-img {
-			background: $home-image;
-			background-attachment: fixed;
-			background-size: cover;
-		
-		.overlay {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -2;
-			background: rgba($primary_color, $background-opacity);
-		}		
-
-
-
-		}		
-	} 
-
-}
-
+@import 'config';
 html {
 	font-size:10px;
 }
@@ -88,7 +55,7 @@ header{
 main {
 	padding: 4rem;
 	height: 100%;
-	
+
 	.icon{
 		margin-top: 1rem;
 
