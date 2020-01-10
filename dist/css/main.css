@@ -1,0 +1,68 @@
+html {
+  font-size: 10px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #444;
+  color: #fff;
+  height: 100%;
+  margin: 0%;
+  font-family: Product Sans, san-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: rgba(68, 68, 68, 0.8); }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weigth: 400; }
+
+h1.lg-heading {
+  font-family: 'Product Sans';
+  font-size: 6rem; }
+
+h2.sm-heading {
+  font-family: 'Product Sans';
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(73, 73, 73, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #eece1a; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .icon {
+    margin-top: 1rem; }
+    main .icon a {
+      padding: 0.4rem; }
+      main .icon a:hover {
+        color: #eece1a;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }

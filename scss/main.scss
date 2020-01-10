@@ -1,0 +1,114 @@
+$primary_color: #444;
+$secondary_color: #eece1a;
+$show-homw-image: true;
+$home-image: url(../img/background.jpg);
+$background-opacity: 0.8;
+
+@mixin easeOut{
+	transition: all 0.5s ease-out;
+}
+
+@mixin background{
+	@if show-home-image{
+		&#bg-img {
+			background: $home-image;
+			background-attachment: fixed;
+			background-size: cover;
+		
+		.overlay {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -2;
+			background: rgba($primary_color, $background-opacity);
+		}		
+
+
+
+		}		
+	} 
+
+}
+
+html {
+	font-size:10px;
+}
+
+* {
+	box-sizing:border-box;
+}
+body {
+
+	@include background();
+	background: $primary_color;
+	color: #fff;
+	height: 100%;
+	margin: 0%;
+	font-family: Product Sans, san-serif;
+	line-height: 1.5;
+}
+
+//headings
+h1,
+h2,
+h3 {
+	margin:0;
+	font-weigth: 400;
+}
+
+h1.lg-heading{
+	font-family: 'Product Sans';
+	font-size: 6rem;
+}
+
+h2.sm-heading{
+	font-family: 'Product Sans';
+	font-size: 2rem;
+	padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+
+.text-secondary{
+	color: $secondary_color;
+}
+
+main {
+	padding: 4rem;
+	height: 100%;
+	
+	.icon{
+		margin-top: 1rem;
+
+		a{
+			padding: 0.4rem;
+
+			&:hover {
+				color: $secondary_color;
+				@include easeOut();
+
+			}
+
+		}
+	}
+
+	&#home {
+		overflow: hidden;
+		h1 {
+			margin-top: 20vh;
+		}
+	}
+
+}
