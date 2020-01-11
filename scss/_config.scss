@@ -2,9 +2,9 @@ $primary_color: #444;
 $secondary_color: #eece1a;
 $show-homw-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.8;
+$background-opacity: 0.85;
 
-@mixin easeOut{
+@mixin easeOut {
 	transition: all 0.5s ease-out;
 }
 
@@ -25,9 +25,6 @@ $background-opacity: 0.8;
 			z-index: -2;
 			background: rgba($primary_color, $background-opacity);
 		}
-
-
-
 		}
 	}
 
