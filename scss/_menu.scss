@@ -39,7 +39,7 @@
   position: fixed;
   top:0;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
   visibility: hidden;
 
   //add the show
@@ -61,7 +61,7 @@
   &-nav{
     margin: 0;
     padding: 0;
-    background: darken($primary_color,5);
+    background: darken($primary_color, 5);
     list-style: none;
     transform: translate3d(0, -100% , 0);
     @include easeOut;
@@ -84,8 +84,8 @@
     }
 
     .portrait{
-      width: 250px;
-      height: 250px;
+      width: 240px;
+      height: 240px;
       background: url(../img/portrait.jpg);
       border-radius: 50%;
       border: solid 3px $secondary_color;
@@ -124,7 +124,7 @@
 
 }
 // adding delay to add a feel that each nav-item lining up
-@for $x from 1 through 4{
+@for $x from 1 through 4 {
     .nav-item:nth-child(#{$x}){
       transition-delay: $x * 0.1s;
     }

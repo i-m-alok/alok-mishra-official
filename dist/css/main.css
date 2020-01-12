@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -55,8 +55,8 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
+      width: 240px;
+      height: 240px;
       background: url(../img/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #eece1a; }
@@ -93,6 +93,31 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (min-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait_sm.jpg");
+      width: 150px;
+      height: 150px; } }
+
 html {
   font-size: 10px; }
 
@@ -124,7 +149,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weigth: 400; }
+  font-weight: 400; }
 
 h1.lg-heading {
   font-family: 'Product Sans';

@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 html {
 	font-size:10px;
 }
@@ -9,7 +10,7 @@ html {
 }
 body {
 
-	@include background();
+	@include background;
 	background: $primary_color;
 	color: #fff;
 	height: 100%;
@@ -23,7 +24,7 @@ h1,
 h2,
 h3 {
 	margin:0;
-	font-weigth: 400;
+	font-weight: 400;
 }
 
 h1.lg-heading{

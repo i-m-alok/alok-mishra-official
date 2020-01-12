@@ -1,6 +1,6 @@
 $primary_color: #444;
 $secondary_color: #eece1a;
-$show-homw-image: true;
+$show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.85;
 
@@ -9,7 +9,7 @@ $background-opacity: 0.85;
 }
 
 @mixin background{
-	@if show-home-image{
+	@if $show-home-image {
 		&#bg-img {
 			background: $home-image;
 			background-attachment: fixed;
@@ -27,5 +27,28 @@ $background-opacity: 0.85;
 		}
 		}
 	}
+}
+//Media query
+@mixin mediaSm{
+	@media screen and (max-width: 500px){
+		@content;
+	}
+}
 
+@mixin mediaMd{
+	@media screen and (min-width: 768px){
+		@content;
+	}
+}
+
+@mixin mediaLg{
+	@media screen and (min-width: 769px) and (max-width: 1170px){
+		@content;
+	}
+}
+
+@mixin mediaXl{
+		@media screen and (min-width: 1171px){
+			@content;
+		}
 }
