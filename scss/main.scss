@@ -12,7 +12,7 @@ body {
 
 	@include background;
 	background: $primary_color;
-	color: #fff;
+	color: set-text-color($primary_color);
 	height: 100%;
 	margin: 0%;
 	font-family: Product Sans, san-serif;
@@ -36,8 +36,8 @@ h2.sm-heading{
 	font-family: 'Product Sans';
 	font-size: 2rem;
 	padding: 0.2rem 1rem;
-	color: #f0f0f0;
-    background: rgba(lighten($primary-color, 2), 0.5);
+	//color: #f0f0f0;
+  background: rgba(lighten($primary-color, 2), 0.5);
 }
 
 a{

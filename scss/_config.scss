@@ -1,4 +1,4 @@
-$primary_color: #444;
+$primary_color: #20b2aa;
 $secondary_color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -28,6 +28,16 @@ $background-opacity: 0.85;
 		}
 	}
 }
+// Set text color
+@function set-text-color($color){
+	@if (lightness($color) > 40){
+		@return #000;
+	}
+	@else{
+		@return #fff;
+	}
+}
+
 //Media query
 @mixin mediaSm{
 	@media screen and (max-width: 500px){

@@ -9,7 +9,7 @@
     width: 25px;
     height: 3px;
     margin-bottom: 5px;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #1c9c95;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -49,7 +49,7 @@
   .menu-branding {
     margin: 0;
     padding: 0;
-    background: #444;
+    background: #20b2aa;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -79,7 +79,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #000; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -125,8 +125,8 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #20b2aa;
+  color: #000;
   height: 100%;
   margin: 0%;
   font-family: Product Sans, san-serif;
@@ -143,7 +143,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -2;
-      background: rgba(68, 68, 68, 0.85); }
+      background: rgba(32, 178, 170, 0.85); }
 
 h1,
 h2,
@@ -159,8 +159,7 @@ h2.sm-heading {
   font-family: 'Product Sans';
   font-size: 2rem;
   padding: 0.2rem 1rem;
-  color: #f0f0f0;
-  background: rgba(73, 73, 73, 0.5); }
+  background: rgba(34, 187, 178, 0.5); }
 
 a {
   color: #fff;
