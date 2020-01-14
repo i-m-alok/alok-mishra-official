@@ -120,6 +120,54 @@ main {
 	}
 
 }
+// work/projects
+.projects {
+	display: grid;
+	grid-gap: 0.7rem;
+	grid-template-columns: repeat(3,1fr);
+	img {
+		width: 100%;
+		border: 3px solid #fff;
+
+		&:hover{
+			opacity: 0.5;
+			//transform: scale(1.2,1.2);
+			border: 3px solid $secondary_color;
+			@include easeOut;
+		}
+	}
+}
+
+
+// button styles
+.btn{
+	display: block;
+	padding: 0.5rem, 1rem;
+	border: 0;
+	margin-bottom: 0.3rem;
+	text-align: center;
+	&:hover{
+		background: $secondary_color;
+		color: set-text-color($secondary_color);
+	}
+}
+
+.btn-dark{
+	@extend .btn;
+
+	border-radius: 5px;
+	background: darken($primary-color, 50);
+	color: #fff;
+}
+
+.btn-light{
+	border-radius: 5px;
+	@extend .btn;
+	background: lighten($primary-color, 50);
+	color: #333;
+}
+
+
 
 #main-footer{
 	text-align: center;
