@@ -12,6 +12,15 @@
 }
 //Medium screens
 @include mediaMd{
+  #home{
+    font-size: 1.5rem;
+    h1.lg-heading{
+      font-size: 5rem;
+    }
+    h2.sm-heading{
+      font-size: 3.5rem;
+    }
+  }
   main{
     align-items: center;
     text-align: center;
@@ -42,8 +51,8 @@
 
     .portrait{
       background: url('../img/portrait_sm.jpg');
-      width: 150px;
-      height: 150px;
+      width: 175px;
+      height: 175px;
     }
   }
 
@@ -58,7 +67,8 @@
   }
 
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    //grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -67,6 +77,7 @@
   main#home h1 {
     margin-top: 10vh;
   }
+
   .projects {
     grid-template-columns: 1fr;
   }
