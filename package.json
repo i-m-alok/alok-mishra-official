@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive portfolio",
   "main": "index.js",
-  "homepage": "https://alokmishra051298.github.io/alok-mishra-official",
+  "homepage": "https://AlokMishra051298.github.io/alok-mishra-official",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive ",
     "deploy": "gh-pages -d dist"
